@@ -14,7 +14,7 @@ export default function Home() {
       <section
         id="casino-list"
         className="py-16 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/bg.jpg')" }}
+        style={{ backgroundImage: "url('/bg3.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
