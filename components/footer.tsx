@@ -80,7 +80,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://www.gamecare.org.uk"
+                href="https://www.gamcare.org.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center col-span-2"
