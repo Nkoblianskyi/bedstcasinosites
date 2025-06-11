@@ -15,20 +15,80 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Ansvarligt Spil</h3>
-            <div className="flex flex-wrap gap-4 mb-4">
-              <div className="bg-white p-2 rounded-md">
-                <Image src="/plus18.svg" alt="18+" width={40} height={40} />
-              </div>
-              <div className="bg-white p-2 rounded-md">
-                <Image src="/images/spillemyndigheden.png" alt="Spillemyndigheden" width={80} height={30} />
-              </div>
-              <div className="bg-white p-2 rounded-md">
-                <Image src="/images/rofus.png" alt="ROFUS" width={80} height={30} />
-              </div>
-              <div className="bg-white p-2 rounded-md">
-                <Image src="/images/stopspillet.png" alt="StopSpillet" width={80} height={30} />
+
+            {/* Red 18+ Badge */}
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-md font-bold text-lg">
+                18+
               </div>
             </div>
+
+            {/* Organization logos with links */}
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              <a
+                href="https://www.spillemyndigheden.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center"
+              >
+                <Image
+                  src="/spillemynd.svg"
+                  alt="Spillemyndigheden"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </a>
+
+              <a
+                href="https://www.stopspillet.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center"
+              >
+                <Image
+                  src="/stopspillet.png"
+                  alt="StopSpillet"
+                  width={100}
+                  height={40}
+                  className="object-contain"
+                />
+              </a>
+
+              <a
+                href="https://www.rofus.nu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/50 p-3 rounded-md hover:bg-gray-400 transition-colors duration-300 flex items-center justify-center"
+              >
+                <Image src="/rofus.png" alt="ROFUS" width={100} height={40} className="object-contain" />
+              </a>
+
+              <a
+                href="https://www.gambleaware.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center"
+              >
+                <Image
+                  src="/gamble.webp"
+                  alt="GambleAware"
+                  width={100}
+                  height={40}
+                  className="object-contain"
+                />
+              </a>
+
+              <a
+                href="https://www.gamecare.org.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center col-span-2"
+              >
+                <Image src="/gamecare.svg" alt="GameCare" width={100} height={40} className="object-contain" />
+              </a>
+            </div>
+
             <p className="text-sm text-gray-400">
               Gambling kan være vanedannende. Spil ansvarligt og kontakt StopSpillet, hvis du har problemer.
             </p>

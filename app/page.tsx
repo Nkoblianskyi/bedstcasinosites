@@ -14,11 +14,11 @@ export default function Home() {
       <section
         id="casino-list"
         className="py-16 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/images/casino-background.jpg')" }}
+        style={{ backgroundImage: "url('/bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center mb-12">Bedste Online Casinoer i Danmark</h2>
+          <h2 className="text-white text-3xl font-bold text-center mb-12">Bedste Online Casinoer i Danmark</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {casinos.map((casino, index) => (

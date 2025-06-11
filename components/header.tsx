@@ -54,7 +54,7 @@ export function Header() {
       {/* Top bar with license info and badges */}
       <div className="bg-gray-900 text-white py-2 px-4 flex justify-between items-center text-sm border-b border-gray-800">
         <div className="flex items-center transition-all duration-300 hover:scale-105">
-          <Image src="/images/denmark-flag.png" alt="Danmark Flag" width={20} height={15} className="mr-2" />
+          <Image src="/denmark.png" alt="Danmark Flag" width={20} height={15} className="mr-2" />
           <span className="hidden sm:inline">Licenseret af Spillemyndigheden</span>
           <span className="sm:hidden">Licenseret</span>
         </div>
@@ -74,8 +74,8 @@ export function Header() {
             className="flex items-center space-x-2 group transition-all duration-300 hover:scale-105"
             onClick={handleNavigation}
           >
-            <div className="relative w-10 h-10 bg-red-600 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-red-700 group-hover:shadow-lg">
-              <span className="text-white font-bold text-lg">B</span>
+            <div className="relative w-10 h-10 flex items-center justify-center transition-all duration-300">
+              <Image src={"/logo.png"} alt="Logo" width={40} height={40} />
             </div>
             <div className="text-white font-bold text-lg hidden sm:block group-hover:text-red-400 transition-colors duration-300">
               BedstCasinoSites
