@@ -15,7 +15,7 @@ export function WelcomeModal() {
       // Small delay to show modal after page load
       const timer = setTimeout(() => {
         setShowModal(true)
-      }, 1000)
+      }, 8000)
 
       return () => clearTimeout(timer)
     }
